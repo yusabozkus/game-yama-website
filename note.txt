@@ -1,0 +1,40 @@
+gameDescriptionP
+gameInstallStep2
+gamePatchDisavtiveP
+gameNameTagsA
+
+steamGamePatch
+epicGamePatch
+rockstarGamePatch
+
+gameNameRight
+gameSteamLinkA
+gameEpicLinkA
+
+gameCompanyNameP
+gameDateP
+gameAddedDateP
+gameTranslateTeamP
+gameDownloadRateP
+gamePatchSizeP
+gamePatchDownloadP
+
+
+
+{
+        "gameName": "",
+        "gameBigBanner": "../assets/img/banner/.jpg",
+        "aboutPatch": "Bu Türkçe yama paketi, Dead Space isimli bilim kurgu ve aksiyon aynı zamanda da güzel maceralara sahip oyun için Türkçe dil dosyalarını içerir. Yama kurulumundan sonra oyunu tamamen Türkçe olarak oynayabilirsiniz. Menü ve arayüz, senaryo, altyazılar 100% oranında Türkçe’ye çevrilmiştir. Yamada Türkçe karakterler desteği bulunmaktadır. Bazı bölümlerde oyundan atma problemi yaşandığı için bazı önkoşul cümleleri bilinçli olarak İngilizce bırakılmıştır.",
+        "patchInstalling": "",
+        "patchDisactive": "",
+        "gameCompany": "",
+        "gameDate": "",
+        "gameAddedDate": " Eylül 2023",
+        "gameTranslateTeam": "",
+        "gameDownloadRate": "",
+        "gamePatchSize": "",
+        "gamePatchDownload": "",
+        "gameSteamLink": "",
+        "gameEpicLink": "",
+        "gamesite": "pages/"
+    },

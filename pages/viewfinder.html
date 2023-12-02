@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAMA HUB - Ana Sayfa</title>
+    <!------------------------------------- STYLE ------------------------------------------>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/single-page.css">
+    <!---------------------------------- REMIX ICON ---------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!---------------------------------- swiper js ----------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!---------------------------------- FAVICON ----------------------------------------->
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <!---------------------------------- FONT AWESOME ----------------------------------------->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+
+<body class="">
+   
+    <div class="feedback-container hide">
+
+        <div class="modal">
+            <div class="modal__header">
+                <span class="modal__title">İstek & Geri Bildirim</span><button id="feedBackCancelButton"
+                    class="button button--icon"><svg id="cancelSvg" width="24" viewBox="0 0 24 24" height="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z">
+                        </path>
+                    </svg></button>
+            </div>
+            <div class="modal__body">
+                <div class="input">
+                    <form action="https://formsubmit.co/tryamahub@gmail.com" method="POST">
+                        <label class="input__label">Başlık</label>
+                        <input class="input__field" type="text" name="Başlık" required>
+                        <p class="input__description">Konunun veya Hatanın Başlığı.</p>
+
+                        <label style="margin-top: 20px;" class="input__label">Email</label>
+                        <input class="input__field" type="email" name="Email" required>
+                        <p class="input__description">Kullanıcının Email Adresi.</p>
+
+                        <div style="margin-top: 20px;" class="radio-inputs">
+                            <label class="radio">
+                                <input type="radio" name="radio" value="HATA" checked="">
+                                <span class="name">HATA</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio" value="ISTEK">
+                                <span class="name">İSTEK</span>
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" name="radio" value="ÖNERİ">
+                                <span class="name">ÖNERİ</span>
+                            </label>
+                        </div>
+
+                        <label style="margin-top: 20px;" class="input__label">Hata & İstek & Öneri</label>
+                        <textarea name="Açıklama" class="input__field input__field--textarea" required></textarea>
+                        <p class="input__description">İsteğinizi yada karşılaştığınız hatayı yada gelmesini istediğiniz
+                            özellikleri bize belirtin.</p>
+                        <div class="modal__footer">
+                            <button class="button button--primary" type="submit">Gönder </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cookies -->
+    <div id="site" class="site flexitem">
+        <div class="fixed-wrapper">
+            <div class="site-left">
+                <header class="flexblock">
+                    <div class="header-inside">
+                        <div class="logo">
+                            <a href="../index.html">
+                                <h1>YAMA<span>HUB</span></h1>
+                            </a>
+                        </div>
+                        <div class="header-menu menu">
+                            <div class="title">
+                                <p>Menü</p>
+                            </div>
+                            <ul class="menu-nav flexblock">
+                                <li class="">
+                                    <div class="overlay"></div>
+                                    <a class="flexitem" href="../index.html">
+                                        <div class="head-icon">
+                                            <svg class="" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                                <path d="M15 18H9" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </div>Ana Sayfa
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <div class="overlay"></div>
+                                    <a class="flexitem" href="../all-patchs.html">
+                                        <div class="head-icon">
+                                            <svg style="width: 26px;" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+
+                                                <g>
+
+                                                    <path
+                                                        d="M15.9 5.5C15.3 4.5 14.2 4 13 4H7c-1.2 0-2.3.5-2.9 1.5-2.3 3.5-2.8 8.8-1.2 9.9 1.6 1.1 5.2-3.7 7.1-3.7s5.4 4.8 7.1 3.7c1.6-1.1 1.1-6.4-1.2-9.9zM8 9H7v1H6V9H5V8h1V7h1v1h1v1zm5.4.5c0 .5-.4.9-.9.9s-.9-.4-.9-.9.4-.9.9-.9.9.4.9.9zm1.9-2c0 .5-.4.9-.9.9s-.9-.4-.9-.9.4-.9.9-.9.9.4.9.9z" />
+
+                                                </g>
+
+                                            </svg>
+                                        </div>Oyun Yamaları
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <div class="overlay"></div>
+                                    <a class="flexitem active-svg" href="">
+                                        <div class="head-icon">
+                                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <path
+                                                        d="m 13.617188 7.058594 c 0.519531 0.519531 0.519531 1.363281 0 1.882812 l -4.675782 4.675782 c -0.519531 0.519531 -1.363281 0.519531 -1.882812 0 l -4.675782 -4.675782 c -0.519531 -0.519531 -0.519531 -1.363281 0 -1.882812 l 4.675782 -4.675782 c 0.519531 -0.519531 1.363281 -0.519531 1.882812 0 z m -7.96875 -6.082032 l -4.671876 4.671876 c -1.300781 1.304687 -1.300781 3.398437 0 4.703124 l 4.671876 4.671876 c 1.304687 1.300781 3.398437 1.300781 4.703124 0 l 4.671876 -4.671876 c 1.300781 -1.304687 1.300781 -3.398437 0 -4.703124 l -4.671876 -4.671876 c -1.304687 -1.300781 -3.398437 -1.300781 -4.703124 0 z m 0 0" />
+                                                    <path
+                                                        d="m 9.433594 4.558594 c -0.199219 0.007812 -0.386719 0.074218 -0.546875 0.1875 c -0.449219 0.324218 -0.550781 0.953125 -0.222657 1.398437 l 0.140626 0.199219 c 0.273437 0.378906 0.226562 0.953125 -0.050782 1.328125 c -0.011718 0.019531 -0.023437 0.035156 -0.035156 0.050781 c -0.273438 0.382813 -0.808594 0.601563 -1.25 0.457032 l -0.230469 -0.074219 c -0.523437 -0.167969 -1.089843 0.117187 -1.257812 0.640625 c -0.171875 0.527344 0.113281 1.09375 0.640625 1.261718 l 0.222656 0.074219 c 0.445312 0.144531 0.738281 0.640625 0.75 1.105469 v 0.066406 c 0.015625 0.464844 -0.304688 0.960938 -0.75 1.105469 l -0.222656 0.074219 c -0.527344 0.171875 -0.8125 0.734375 -0.640625 1.261718 c 0.167969 0.523438 0.734375 0.8125 1.257812 0.640626 l 0.230469 -0.078126 c 0.445312 -0.144531 0.976562 0.082032 1.25 0.457032 c 0.011719 0.019531 0.023438 0.035156 0.039062 0.050781 c 0.019532 0.03125 0.035157 0.058594 0.054688 0.089844 c 0.300781 -0.113281 0.589844 -0.289063 0.835938 -0.535157 l 0.71875 -0.71875 c -0.246094 -0.332031 -0.441407 -0.707031 -0.574219 -1.109374 c -0.003907 -0.011719 -0.007813 -0.023438 -0.011719 -0.035157 c -0.003906 -0.007812 -0.007812 -0.011719 -0.011719 -0.019531 c -0.285156 -0.84375 -0.152343 -1.644531 0 -2.4375 c 0.003907 -0.003906 0.007813 -0.011719 0.011719 -0.015625 c 0.003906 -0.011719 0.007812 -0.027344 0.011719 -0.039063 c 0.261719 -0.789062 0.757812 -1.464843 1.414062 -1.945312 c 0.007813 -0.003906 0.019531 -0.011719 0.027344 -0.015625 c 0.019531 -0.015625 0.042969 -0.03125 0.0625 -0.050781 c 0.644531 -0.449219 1.433594 -0.714844 2.289063 -0.714844 c 0.476562 0 0.929687 0.085938 1.351562 0.234375 c -0.097656 -0.402344 -0.300781 -0.785156 -0.617188 -1.101563 l -1.75 -1.75 c -0.066406 0.410157 -0.410156 0.777344 -0.804687 0.902344 c -0.023437 0.007813 -0.042969 0.015625 -0.0625 0.019532 c -0.445313 0.148437 -1.007813 0.019531 -1.28125 -0.359376 l -0.140625 -0.195312 c -0.15625 -0.210938 -0.390625 -0.355469 -0.652344 -0.398438 c -0.066406 -0.011718 -0.132812 -0.015624 -0.195312 -0.011718 z m 0 0" />
+                                                </g>
+                                            </svg>
+                                        </div>Uygulama Yamaları
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <div class="overlay"></div>
+                                    <a class="flexitem" href="">
+                                        <div class="head-icon">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6 18V14M6 14H8L13 17V7L8 10H5C3.89543 10 3 10.8954 3 12V12C3 13.1046 3.89543 14 5 14H6ZM17 7L19 5M17 17L19 19M19 12H21"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>Güncel Haberler
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-menu etkılesım">
+                            <div class="title">
+                                <p>Etkileşimler</p>
+                            </div>
+                            <ul class="menu-nav flexblock">
+                                <li class="">
+                                    <div class="overlay"></div>
+                                    <a class="flexitem" href="">
+                                        <div class="head-icon">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13 20V18C13 15.2386 10.7614 13 8 13C5.23858 13 3 15.2386 3 18V20H13ZM13 20H21V19C21 16.0545 18.7614 14 16 14C14.5867 14 13.3103 14.6255 12.4009 15.6311M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7ZM18 9C18 10.1046 17.1046 11 16 11C14.8954 11 14 10.1046 14 9C14 7.89543 14.8954 7 16 7C17.1046 7 18 7.89543 18 9Z"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>Hakkımızda
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <div class="overlay"></div>
+                                    <a class="flexitem" href="">
+                                        <div class="head-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21 9V3M17 9V3M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>Bizimle İletişime Geçin
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <div class="overlay"></div>
+                                    <a class="flexitem" href="">
+                                        <div class="head-icon">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11 7C11 9.20914 9.20914 11 7 11C4.79086 11 3 9.20914 3 7C3 4.79086 4.79086 3 7 3C9.20914 3 11 4.79086 11 7ZM4.97715 7C4.97715 8.11719 5.88281 9.02284 7 9.02284C8.11719 9.02284 9.02284 8.11719 9.02284 7C9.02284 5.88281 8.11719 4.97716 7 4.97716C5.88281 4.97716 4.97715 5.88281 4.97715 7Z"
+                                                    fill="#0F0F0F" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.37162 14.2378C3.54371 13.3886 5.09751 13 7 13C8.90249 13 10.4563 13.3886 11.6284 14.2378C12.8188 15.1004 13.4914 16.3477 13.795 17.8079C14.1811 19.6647 12.5708 21 11 21H3C1.42922 21 -0.181121 19.6647 0.204962 17.8079C0.508602 16.3477 1.18119 15.1004 2.37162 14.2378ZM3.54511 15.8574C2.84896 16.3618 2.39073 17.1203 2.16308 18.2151C2.12425 18.4018 2.17618 18.5729 2.31828 18.7223C2.47041 18.8824 2.71717 19 3 19H11C11.2828 19 11.5296 18.8824 11.6817 18.7223C11.8238 18.5729 11.8757 18.4018 11.8369 18.2151C11.6093 17.1203 11.151 16.3618 10.4549 15.8574C9.74039 15.3397 8.65185 15 7 15C5.34815 15 4.25961 15.3397 3.54511 15.8574Z"
+                                                    fill="#0F0F0F" />
+                                                <path
+                                                    d="M21 7C21 9.20914 19.2091 11 17 11C14.7909 11 13 9.20914 13 7C13 4.79086 14.7909 3 17 3C19.2091 3 21 4.79086 21 7ZM14.9772 7C14.9772 8.11719 15.8828 9.02284 17 9.02284C18.1172 9.02284 19.0228 8.11719 19.0228 7C19.0228 5.88281 18.1172 4.97716 17 4.97716C15.8828 4.97716 14.9772 5.88281 14.9772 7Z"
+                                                    fill="#0F0F0F" />
+                                                <path
+                                                    d="M14.5361 13.2689C13.9347 13.4165 13.7248 14.1168 14.0647 14.6344L14.1075 14.6995C14.3593 15.0829 14.839 15.239 15.2891 15.1501C15.7787 15.0534 16.3451 15 17 15C18.6519 15 19.7404 15.3397 20.4549 15.8574C21.1511 16.3618 21.6093 17.1203 21.8369 18.2151C21.8758 18.4018 21.8238 18.5729 21.6817 18.7223C21.5296 18.8824 21.2828 19 21 19H16C15.4478 19 15 19.4477 15 20C15 20.5523 15.4478 21 16 21H21C22.5708 21 24.1811 19.6647 23.7951 17.8079C23.4914 16.3477 22.8188 15.1004 21.6284 14.2378C20.4563 13.3886 18.9025 13 17 13C16.0994 13 15.2769 13.0871 14.5361 13.2689Z"
+                                                    fill="#0F0F0F" />
+                                            </svg>
+                                        </div>Ekibimize Katılın
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-menu social">
+                            <div class="title">
+                                <p>Sosyal</p>
+                            </div>
+                            <ul class="menu-nav flexblock">
+                                <li class="">
+                                    <div style="display: block;" class="overlay"></div>
+                                    <a class="flexitem" href="">
+                                        <div class="head-icon">
+                                            <img src="../assets/img/logo/discord.png" alt="">
+                                        </div>Discord
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <div style="display: block;" class="overlay"></div>
+                                    <a class="flexitem" href="">
+                                        <div class="head-icon">
+                                            <img src="../assets/img/logo/instagram.png" alt="">
+                                        </div>Instagram
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <div style="display: block;" class="overlay"></div>
+                                    <a class="flexitem" href="">
+                                        <div class="head-icon">
+                                            <img src="../assets/img/logo/twitter.png" alt="">
+                                        </div>Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card flexblock">
+                        <center>
+                            <img src="/assets/img/material/news-illust.png" alt="">
+                            <h3>İstek & Geri Bildirim</h3>
+                            <p>Gelmesini istediğiniz oyun yamalarını veya websitemizdeki hataları bize bildirin.</p>
+                            <button id="feedbackButton">BİLDİR</button>
+                        </center>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+
+        <!-- fixed rapper (right-left) -->
+        <div class="site-center-single flexblock">
+            <div class="mobile-header desktop-hide">
+                <header>
+                    <div class="logo">
+                        <a href="">
+                            <h1>YAMA <span>HUB</span></h1>
+                        </a>
+                    </div>
+                    <div class="right-mobile-menu">
+                        <div class="toggle-switch">
+                            <label class="switch">
+                                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#ffd43b">
+                                            <circle r="5" cy="12" cx="12"></circle>
+                                            <path
+                                                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                            </path>
+                                        </g>
+                                    </svg></span>
+                                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path
+                                            d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                                        </path>
+                                    </svg></span>
+                                <input type="checkbox" id="mobileCheckbox" class="input">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <button class="Btn">
+
+                            <div class="sign"><svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32"
+                                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <title>random</title>
+                                    <path
+                                        d="M0 24q0 0.832 0.576 1.44t1.44 0.576h1.984q2.048 0 3.904-0.8t3.168-2.144 2.144-3.2 0.8-3.872q0-2.464 1.728-4.224t4.256-1.76h4v1.984q0 0.672 0.384 1.152t0.864 0.704 1.12 0.128 1.056-0.544l4-4q0.608-0.64 0.576-1.44t-0.576-1.408l-4-4q-0.48-0.448-1.088-0.544t-1.12 0.128-0.864 0.704-0.352 1.12v2.016h-4q-2.016 0-3.872 0.8t-3.2 2.112-2.144 3.2-0.768 3.872q0 2.496-1.76 4.256t-4.256 1.76h-1.984q-0.832 0-1.44 0.576t-0.576 1.408zM0 8.032q0 0.832 0.576 1.408t1.44 0.576h1.984q1.408 0 2.592 0.608t2.080 1.664q0.672-2.048 1.984-3.68-2.912-2.592-6.656-2.592h-1.984q-0.832 0-1.44 0.608t-0.576 1.408zM13.376 23.456q2.848 2.56 6.624 2.56h4v2.016q0 0.64 0.384 1.152t0.864 0.704 1.12 0.096 1.056-0.544l4-4q0.608-0.608 0.576-1.44t-0.576-1.376l-4-4q-0.48-0.48-1.088-0.576t-1.12 0.128-0.864 0.736-0.352 1.12v1.984h-4q-1.376 0-2.592-0.576t-2.048-1.664q-0.704 2.048-1.984 3.68z">
+                                    </path>
+                                </svg></div>
+
+                            <div class="text"> Rastgele Haber</div>
+                        </button>
+                        <button class="Btn" id="openMobileMenu">
+                            <div class="sign"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 7L7 7M20 7L11 7" stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M20 17H17M4 17L13 17" stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M4 12H7L20 12" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+                                </svg></div>
+                        </button>
+                    </div>
+                </header>
+            </div>
+            <div class="center-top flexitem mobile-hide">
+                <div style="margin-right: 20px;" class="search">
+                    <i class="ri-search-2-line"></i><input type="search" placeholder="Yama Ara..." id="searchInput">
+                    <div class="search-content" id="searchContent">
+                        <!-- <a href="" class="search-card">
+                            <img src="assets/img/banner/red-dead-2-single.jpg" alt="">
+                            <div class="s-card-content">
+                                <h3>Red Dead Redemption 2</h3>
+                                <p>Rockstar Games</p>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="center-right flexitem">
+                    <div class="card-weather flexblock">
+                        <div class="card-left">
+                            <img src="assets/img/home/weather/rain.png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <p class="celcius-text">Null</p>
+                            <p class="location">Turkey</p>
+                        </div>
+                    </div>
+                    <div class="internet-status">
+                        <svg id="onlineSvg" class="online" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 8C4.88494 6.10123 8.31702 5 12 5C15.683 5 19.1151 6.10123 22 8" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M4.99995 11.8774C7.05917 10.6054 9.44994 9.87744 12 9.87744C14.55 9.87744 16.9407 10.6054 19 11.8774"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M9.07355 15.4549C10.0119 15.0016 11.0216 14.7549 12.0735 14.7549C13.1255 14.7549 14.1352 15.0016 15.0735 15.4549"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11.9181 19.1465L11.902 19.1304" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <svg id="offlineSvg" class="offline" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 7.92647C3.24008 7.13029 4.58126 6.47786 6 5.99271M22 7.92647C19.1151 6.07423 15.683 5 12 5C11.6645 5 11.3311 5.00891 11 5.02652"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M5.17159 11.7046C6.63169 10.86 8.26267 10.2779 9.99998 10.0229M18.8284 11.7046C17.9699 11.2079 17.0522 10.8021 16.0886 10.5001"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M9.07355 15.2544C9.98888 14.9309 10.9739 14.7549 12 14.7549C13.0261 14.7549 14.0111 14.9309 14.9265 15.2544"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11.9181 19.1465L11.902 19.1304" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2 2L22 22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="toggle-switch">
+                        <label class="switch">
+                            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <g fill="#ffd43b">
+                                        <circle r="5" cy="12" cx="12"></circle>
+                                        <path
+                                            d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                        </path>
+                                    </g>
+                                </svg></span>
+                            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                        d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                                    </path>
+                                </svg></span>
+                            <input type="checkbox" id="checkbox" class="input">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <button class="Btn">
+
+                        <div class="sign"><svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <title>random</title>
+                                <path
+                                    d="M0 24q0 0.832 0.576 1.44t1.44 0.576h1.984q2.048 0 3.904-0.8t3.168-2.144 2.144-3.2 0.8-3.872q0-2.464 1.728-4.224t4.256-1.76h4v1.984q0 0.672 0.384 1.152t0.864 0.704 1.12 0.128 1.056-0.544l4-4q0.608-0.64 0.576-1.44t-0.576-1.408l-4-4q-0.48-0.448-1.088-0.544t-1.12 0.128-0.864 0.704-0.352 1.12v2.016h-4q-2.016 0-3.872 0.8t-3.2 2.112-2.144 3.2-0.768 3.872q0 2.496-1.76 4.256t-4.256 1.76h-1.984q-0.832 0-1.44 0.576t-0.576 1.408zM0 8.032q0 0.832 0.576 1.408t1.44 0.576h1.984q1.408 0 2.592 0.608t2.080 1.664q0.672-2.048 1.984-3.68-2.912-2.592-6.656-2.592h-1.984q-0.832 0-1.44 0.608t-0.576 1.408zM13.376 23.456q2.848 2.56 6.624 2.56h4v2.016q0 0.64 0.384 1.152t0.864 0.704 1.12 0.096 1.056-0.544l4-4q0.608-0.608 0.576-1.44t-0.576-1.376l-4-4q-0.48-0.48-1.088-0.576t-1.12 0.128-0.864 0.736-0.352 1.12v1.984h-4q-1.376 0-2.592-0.576t-2.048-1.664q-0.704 2.048-1.984 3.68z">
+                                </path>
+                            </svg></div>
+
+                        <div class="text"> Rastgele Haber</div>
+                    </button>
+                </div>
+            </div>
+            <div class="main-center">
+                <div class="main-content">
+                    <div class="main-left">
+                        <div class="game-banner">
+                            <img id="gameBigBannerImg" src="../assets/img/banner/red-dead-2-single.jpg" alt="">
+                        </div>
+                        <div class="game-name" id="gameNameP">
+                            
+                        </div>
+                        <div class="main-card about-patch">
+                            <button class="btn" type="button">
+                                <strong>YAMA HAKKINDA</strong>
+                                <img src="../logo.png" alt="">
+                                <div id="container-stars">
+                                    <div id="stars"></div>
+                                </div>
+
+                                <div id="glow">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                            </button>
+                            <div class="description">
+                                <p id="gameDescriptionP"></p>
+                            </div>
+                        </div>
+                        <div class="main-card installing">
+                            <button class="btn" type="button">
+                                <strong>KURULUM</strong>
+                                <img src="../logo.png" alt="">
+                                <div id="container-stars">
+                                    <div id="stars"></div>
+                                </div>
+
+                                <div id="glow">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                            </button>
+                            <div class="description">
+                                <p>Yamanın tüm dil dosyaları indireceğiniz RAR dosyasının içindedir. Kurmak için
+                                    aşağıdaki
+                                    adımları takip ediniz.</p>
+
+                                <div class="step-by-step">
+                                    <div class="step-card">
+                                        <div class="step">1</div>
+                                        <div class="step-text">Yama dosyalarını indirin.</div>
+                                    </div>
+                                    <div class="step-card">
+                                        <div class="step">2</div>
+                                        <div class="step-text" id="gameInstallStep2">
+                                        </div>
+                                    </div>
+                                    <div class="step-card">
+                                        <div class="step">3</div>
+                                        <div class="step-text">Yama kurulumu tamamlandı. Oyun ayarlarından altyazıları
+                                            açmayı unutmayın.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-card installing" id="disactivePatch">
+                            <button class="btn" type="button">
+                                <strong>DEVREDIŞI BIRAKMAK</strong>
+                                <img src="../logo.png" alt="">
+                                <div id="container-stars">
+                                    <div id="stars"></div>
+                                </div>
+
+                                <div id="glow">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                            </button>
+                            <div class="description">
+                                <p id="gamePatchDisavtiveP"></p>
+                            </div>
+                        </div>
+                        <div class="main-card installing">
+                            <button class="btn" type="button">
+                                <strong>DOSYA DİZİNLERİ</strong>
+                                <img src="../logo.png" alt="">
+                                <div id="container-stars">
+                                    <div id="stars"></div>
+                                </div>
+
+                                <div id="glow">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                            </button>
+                            <div class="code-editor">
+                                <div class="header">
+                                    <span class="title">DİZİNLER</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        class="icon">
+                                        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                        <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A"
+                                                d="M6 6L18 18">
+                                            </path>
+                                            <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A"
+                                                d="M18 6L6 18">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="editor-content">
+                                    <code class="code">
+                                    <p><span class="color-0">.game-dizin </span> <span>{</span></p>
+                          
+                                    <p class="property">
+                                      <span class="color-2">steam</span><span>:</span>
+                                      <span class="color-1" id="steamGamePatch">C:\Program Files (x86)\Steam\steamapps\common\
+                                      </span>;
+                                    </p>
+                                    <p class="property">
+                                      <span class="color-2">epic-games</span><span>:</span>
+                                      <span class="color-1" id="epicGamePatch">C:\Program Files\Epic Games\
+                                      </span>;
+                                    </p>
+                                    <p class="property">
+                                      <span class="color-2">rockstar-games</span><span>:</span>
+                                      <span class="color-1" id="rockstarGamePatch">C:\Program Data\Rockstar Games\
+                                      </span>;
+                                    </p>
+                                    <p class="property">
+                                        <span class="color-2">2k-games</span><span>:</span>
+                                        <span class="color-1" id="g2kGamesPatch">C:\Program Files (x86)\2K Games\
+                                        </span>;
+                                      </p>
+                                    <span>}</span>
+                                  </code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-tags">
+                            <h1>
+                                ETIKETLER:
+                            </h1>
+                            <div class="tags-container">
+                                <a class="tags" href="yamalar.html">Yama</a>
+                                <a class="tags" href="yamalar.html">Dil Paketi</a>
+                                <a class="tags" href="red-dead-redemption.html" id="gameNameTagsA">Red Dead Redemption
+                                    II</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="main-right" id="rightContent">
+                        <div class="game-info">
+                            <div class="content">
+                                <div class="game-name" id="gameNameRight">Red Dead Redemption II</div>
+                                <div class="games-corporation">
+                                    <a href="" id="gameSteamLinkA" target="_blank">
+                                        <div class="steam-store cryp-item">Steam</div>
+                                    </a>
+                                    <a href="" id="gameEpicLinkA" target="_blank">
+                                        <div class="epic-store cryp-item second-card">Epic</div>
+                                    </a>
+                                </div>
+                                <div class="game-owner card-game"><i class="fa-brands fa-sketch"></i>
+                                    <p>Firma: <span id="gameCompanyNameP">Rockstar Games</span></p>
+                                </div>
+                                <div class="game-date card-game"><i class="fa-solid fa-watch-smart"></i>
+                                    <p>Çıkış Yılı: <span id="gameDateP">2019</span></p>
+                                </div>
+
+                                <div class="line"></div>
+
+                                <div class="game-share-date card-game"><i class="fa-solid fa-calendar"></i>
+                                    <p>Tarih: <span id="gameAddedDateP">4 Ağustos 2021</span></p>
+                                </div>
+                                <div class="ceviri-sahibi card-game"><i class="fa-solid fa-ranking-star"></i>
+                                    <p>Çeviren: <span id="gameTranslateTeamP">Anonymous</span></p>
+                                </div>
+                                <div class="game-download card-game"><i class="fa-solid fa-laptop-arrow-down"></i>
+                                    <p>İndirme Sayısı: <span id="gameDownloadRateP">3679</span></p>
+                                </div>
+                                <div class="game-size card-game"><i class="fa-solid fa-memory"></i>
+                                    <p>Yama Boyutu: <span id="gamePatchSizeP">5,74 MB</span></p>
+                                </div>
+                                <div class="game-download-card">
+                                    <div class="content-card">
+                                        <p>Yamayı İndirmek İçin Butona tıklayın.</p>
+
+                                        <center><a id="gamePatchDownloadP"
+                                                href="https://drive.google.com/file/d/1Tfh_KImMhrvKQjdilWGd1VDgIR9zD9hR/edit"
+                                                target="_blank">
+                                                <button class="button">
+                                                    <span class="button_lg">
+                                                        <span class="button_sl"></span>
+                                                        <span class="button_text"><i style="margin-right: 10px;"
+                                                                class="fa-solid fa-cloud-arrow-down"></i> YAMAYI
+                                                            INDIR</span>
+                                                    </span>
+                                                </button>
+                                            </a></center>
+                                        <style>
+                                            .button {
+                                                margin-top: 30px;
+                                                -moz-appearance: none;
+                                                -webkit-appearance: none;
+                                                appearance: none;
+                                                border: none;
+                                                width: 90%;
+                                                background: none;
+                                                color: #1e3246;
+                                                cursor: pointer;
+                                                position: relative;
+                                                padding: 8px;
+                                                margin-bottom: 20px;
+                                                text-transform: uppercase;
+                                                font-weight: bold;
+                                                font-size: 14px;
+                                                transition: all .15s ease;
+                                            }
+
+                                            .button::before,
+                                            .button::after {
+                                                content: '';
+                                                display: block;
+                                                position: absolute;
+                                                right: 0;
+                                                left: 0;
+                                                height: calc(50% - 5px);
+                                                border: 1px solid #7D8082;
+                                                transition: all .15s ease;
+                                            }
+
+                                            .button::before {
+                                                top: 0;
+                                                border-bottom-width: 0;
+                                            }
+
+                                            .button::after {
+                                                bottom: 0;
+                                                border-top-width: 0;
+                                            }
+
+                                            .button:active,
+                                            .button:focus {
+                                                outline: none;
+                                            }
+
+                                            .button:active::before,
+                                            .button:active::after {
+                                                right: 3px;
+                                                left: 3px;
+                                            }
+
+                                            .button:active::before {
+                                                top: 3px;
+                                            }
+
+                                            .button:active::after {
+                                                bottom: 3px;
+                                            }
+
+                                            .button_lg {
+                                                position: relative;
+                                                display: block;
+                                                padding: 10px 20px;
+                                                color: #fff;
+                                                background-color: #0f1923;
+                                                overflow: hidden;
+                                                box-shadow: inset 0px 0px 0px 1px transparent;
+                                            }
+
+                                            .button_lg::before {
+                                                content: '';
+                                                display: block;
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 2px;
+                                                height: 2px;
+                                                background-color: #0f1923;
+                                            }
+
+                                            .button_lg::after {
+                                                content: '';
+                                                display: block;
+                                                position: absolute;
+                                                right: 0;
+                                                bottom: 0;
+                                                width: 4px;
+                                                height: 4px;
+                                                background-color: #0f1923;
+                                                transition: all .2s ease;
+                                            }
+
+                                            .button_sl {
+                                                display: block;
+                                                position: absolute;
+                                                top: 0;
+                                                bottom: -1px;
+                                                left: -8px;
+                                                width: 0;
+                                                background-color: #ff4655;
+                                                transform: skew(-15deg);
+                                                transition: all .2s ease;
+                                            }
+
+                                            .button_text {
+                                                position: relative;
+                                            }
+
+                                            .button:hover {
+                                                color: #0f1923;
+                                            }
+
+                                            .button:hover .button_sl {
+                                                width: calc(100% + 15px);
+                                            }
+
+                                            .button:hover .button_lg::after {
+                                                background-color: #fff;
+                                            }
+                                        </style>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-bottom">
+                    <div class="content-bottom">
+                        <div id="disqus_thread">
+                            <p></p>
+                        </div>
+                        <script>
+                            /**
+                            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+                            (function () { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://yamahub.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+
+                        </script>
+                        <div class="footer">
+                            <div class="footer-content">
+                                <div class="games-footer">
+                                    <div class="subtitle-single">
+                                        <h1>Oyun Etiketleri</h1>
+                                        <div class="under-text"></div>
+                                    </div>
+                                    <div class="container">
+                                        <a href="../pages/red-dead-redemption.html"><span>Red Dead Redemption II</span></a>
+                                        <a href="../pages/grand-theft-auto-v.html"><span>Grand Theft Auto 5</span></a>
+                                        <a href="../pages/elden-ring.html"><span>ELDEN RING</span></a>
+                                        <a href="../pages/cities-skylines.html"><span>Cities: Skylines</span></a>
+                                        <a href="../pages/resident-evil-3.html"><span>Resident Evil 3</span></a>
+                                        <a href="../pages/raft.html"><span>Raft</span></a>
+                                        <a href="../pages/mafia-definitive-edition.html"><span>Mafia: Definitive Edition</span></a>
+                                        <a href="../pages/subnautica.html"><span>Subnautica</span></a>
+                                        <a href="../pages/assassins-creed-syndicate.html"><span>Assassin’s Creed: Syndicate</span></a>
+                                        <a href="../pages/marvels-spider-man-miles-morales.html"><span>Marvel’s Spider-Man: Miles Morales</span></a>
+                                    </div>
+                                </div>
+                                <div class="info-footer">
+                                    <div class="subtitle-single">
+                                        <h1>Bilgilendirme</h1>
+                                        <div class="under-text"></div>
+                                    </div>
+                                    <div class="container">
+                                        <p>YAMAHUB.com çeşitli video oyunları için bağımsız çevirmenler ve mod
+                                            yapımcıları
+                                            tarafından üretilen dil yamalarına erişim sunan bir internet sitesidir. Oyun
+                                            içeriği
+                                            ve materyalleri, ilgili yayıncılarının ve lisans verenlerinin ticari
+                                            markaları ve
+                                            telif haklarıdır. Bu web sitesi oyun yayıncılarıyla bağlantılı değildir. Tüm
+                                            hakları
+                                            saklıdır.</p>
+                                        <p>YAMAHUB.com is a website that provides access to language mods made by
+                                            independent
+                                            translators and mod creators for various video games. Game content and
+                                            materials are
+                                            trademarks and copyrights of their respective publishers and licensors. This
+                                            website
+                                            is not affiliated with game publishers. All Rights Reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="site-bottom">
+                            <center>
+                                <div class="content">
+                                    <img src="../logo.png" alt="">
+                                    <p><span>YAMAHUB.com</span> | Tüm hakları saklıdır.</p>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/singleApp.js"></script>
+
+    <script>
+        let json_games2 = "../assets/js/games.json";
+
+        fetch(json_games2).then(Response => Response.json())
+            .then((data) => {
+                let games_array = data.filter(ele => {
+                    return ele.gameName === "ViewFinder"
+                });
+
+                window.document.title = games_array[0].gameName + ' - YAMA HUB'
+
+                gameNameP.textContent = games_array[0].gameName + " Türkçe Yama"
+                gameBigBannerImg.src = games_array[0].gameBigBanner
+
+                gameDescriptionP.textContent = games_array[0].aboutPatch;
+                gameInstallStep2.textContent = games_array[0].patchInstalling;
+                gamePatchDisavtiveP.textContent = games_array[0].patchDisactive;
+                gameNameTagsA.textContent = games_array[0].gameName;
+
+                steamGamePatch.textContent = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\" + games_array[0].gameName + "\\ ";
+                epicGamePatch.style.display = 'none';
+                g2kGamesPatch.style.display = 'none';
+                rockstarGamePatch.style.display = 'none';
+
+                gameNameRight.textContent = games_array[0].gameName;
+                gameSteamLinkA.href = games_array[0].gameSteamLink;
+                gameEpicLinkA.href = games_array[0].gameEpicLink;
+
+                gameCompanyNameP.textContent = games_array[0].gameCompany;
+                gameDateP.textContent = games_array[0].gameDate;
+                gameAddedDateP.textContent = games_array[0].gameAddedDate;
+                gameTranslateTeamP.textContent = games_array[0].gameTranslateTeam;
+                gameDownloadRateP.textContent = games_array[0].gameDownloadRate;
+                gamePatchSizeP.textContent = games_array[0].gamePatchSize;
+                gamePatchDownloadP.href = games_array[0].gamePatchDownload;
+
+                if (games_array[0].gameEpicLink == "#"){
+                    gameEpicLinkA.style.display = 'none'
+                }
+
+                if (gamePatchDisavtiveP.textContent == ""){
+                    disactivePatch.style.display = "none"
+                }
+            });
+    </script>
+</body>
+<script id="dsq-count-scr" src="//yamahub.disqus.com/count.js" async></script>
+
+</html>

@@ -1,0 +1,76 @@
+.dark-theme .center-main .content-card-about p{
+    color: #b4b4b4;
+}
+.dark-theme .center-main .content-card-about p strong{
+    color: white;
+}
+.dark-theme .center-main .card-about{
+    background-color: #555555;
+    border: 1px solid #d81f26;
+}
+.center-main{   
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.center-main .card-about:nth-child(1){
+    margin-top: 0px;
+}
+.center-main .card-about{
+    margin-top: 100px;
+    border: 1px solid #9b9b9b;
+    background-color: #dddddd;
+    padding: 20px;
+    border-radius: 15px;
+}
+.center-main .content-card-about{
+    margin: 20px;
+}
+.center-main .content-card-about p:nth-child(1){
+    margin-top: 20px;
+}
+.center-main .content-card-about p{
+    color: #6e6e6e;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 40px;
+}
+.center-main .content-card-about .content-p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.center-main .content-card-about .content-p p{
+    margin-top: 20px;
+} 
+.center-main .content-card-about p span{
+    color: #d81f26;
+}
+
+.center-main .content-card-about p strong{
+    color: #000000;
+    font-weight: 800;
+}
+
+.mission-vision .content-card-about .subtitle h1{
+    font-size: 22px;
+}
+
+.mission-vision .continer{
+    margin-top: 29px;
+}
+
+.mission-vision .content-card-about{
+    margin-top: 5   0px;
+}
+.mission-vision .content-card-about .content-card-about-mi:nth-child(2) p{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 415px) {
+    .center-main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .center-main .content-card-about .content-p p{
+        margin-top: 40px    ;
+    }
+}
